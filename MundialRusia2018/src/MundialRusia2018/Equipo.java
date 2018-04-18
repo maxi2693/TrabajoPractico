@@ -1,4 +1,4 @@
-package mundiadefutbol;
+package MundialRusia2018;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,17 +10,17 @@ public class Equipo {
     private List<Partido> partidosJugados = new ArrayList();
     private int golesRecibidos;
     private int golesConvertidos;
-    
 
     //Metodos:
+    //Devuelve el nombre del equipo
     public String getNombre() {
         return this.nombre;
     }
-   
-    //Devuelve el nombre del equipo
+    //Carga el nombre del equipo
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
     // * Getters y Setters  de goles recibidos y convertidos
     public int getGolesRecibidos() {
         return golesRecibidos;
@@ -38,12 +38,11 @@ public class Equipo {
         this.golesConvertidos = golesConvertidos;
     }
     //
-    
 
     //Devuelve la diferencia de goles , por ejemplo : Si recibe 2 goles y convirtio 8, la diferencia es de 6 (EJERCICIO 2)
     public int getDiferenciaDeGoles() {
         return (this.golesRecibidos - this.golesConvertidos);
-       
+
     }
     //Carga los partidos jugados
     public void setPartidosJugados(Partido p){

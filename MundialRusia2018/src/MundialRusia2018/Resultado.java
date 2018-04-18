@@ -1,4 +1,4 @@
-package mundiadefutbol;
+package MundialRusia2018;
 
 public class Resultado {
 
@@ -9,6 +9,11 @@ public class Resultado {
     //Al no crear el constructor se define uno por default
     
     //Metodos :
+    
+    public Resultado(){
+        this.golesLocal = 0;
+        this.golesVisitante = 0;
+    }
     
     //Devuelve cantidad de goles de Local
     public int getGolesLocal() {

@@ -1,19 +1,27 @@
-package mundiadefutbol;
+package MundialRusia2018;
 
-import java.util.Date;
+
 
 public class Partido {
     //Variables:
-    private Date fecha;
+   
     private Equipo local;
     private Equipo visitante;
-    private Resultado resultado;
+    private Resultado resultado = new Resultado();
     //Constructor : 
-    public Partido(Date fecha, Equipo local, Equipo visitante) {
-        this.fecha = fecha;
+    public Partido( Equipo local, Equipo visitante) {
+        
         this.visitante = visitante;
         this.local = local;
 
+    }
+
+    public void setLocal(Equipo local) {
+        this.local = local;
+    }
+
+    public void setVisitante(Equipo visitante) {
+        this.visitante = visitante;
     }
     //Devuelve un resultado
     public Resultado getResultado(){

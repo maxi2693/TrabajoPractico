@@ -1,4 +1,4 @@
-package mundiadefutbol;
+package MundialRusia2018;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,12 +25,12 @@ public abstract class EtapaMundial {
 
     //Añade un partido a la lista
     public void addPartido(Partido unPartido) {
-        this.partidos.add(unPartido);
+        partidos.add(unPartido);
     }
 
     //Retorna la lista de partidos
     protected List<Partido> getPartidos() {
-        return this.partidos;
+        return partidos;
     }
 
     //Metodo abastracto (lo que convierte a esta clase en abstracta)
